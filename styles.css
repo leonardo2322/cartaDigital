@@ -125,6 +125,11 @@
     font-size: 30px;
     border-bottom: 3px solid #ffd700;
   }
+  .map{
+    display: flex;
+    position: relative;
+    bottom: 50vh;
+  }
 
   .footer {
     display: grid;
@@ -321,6 +326,22 @@
     font-size: 30px;
     border-bottom: 3px solid #ffd700;
   }
+  .map{
+    display: flex;
+    position: relative;
+    bottom: 50vh;
+  }
+  .Cont-map .ttMap{
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    bottom: 20vh;
+    border-bottom: 2px solid #ffd700;
+  }
+  .Cont-map{
+  }
 
   .footer {
     display: grid;
@@ -330,7 +351,7 @@
     background-image: url("img/fondo1.jpg");
     justify-items: center;
     gap: 5px;
-    height: 80vh;
+    height: 100vh;
     color: #fff;
     z-index: 2;
   }
@@ -518,6 +539,12 @@
     font-size: 30px;
     background: #df9a06;
     border-bottom: 3px solid #ffd700;
+  }
+  .map{
+    display: flex;
+    position: relative;
+    bottom: 20vh;
+    width: 90%;
   }
 
   .footer {
