@@ -10,6 +10,7 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
+    max-height: 100%;
     background: linear-gradient(-45deg,#23d5ab, #ee7752, #e73c7e, #ffd700 );
     animation: fondo 15s ease infinite;
   }
@@ -36,18 +37,18 @@
     color: #fff;
   }
   .header .bars {
-    grid-column: 1/2;
     cursor: pointer;
     color: #fff;
     font-size: 40px;
+    grid-column: 3/4;
+
   }
 
   .header .arrow {
     cursor: pointer;
-    grid-column: 3/4;
-    color: #fff;
+    grid-column: 1/2;
 
-    font-size: 30px;
+    font-size: 60px;
   }
   .header h1 {
     color: #fff;
@@ -58,18 +59,29 @@
 
   #sidebar {
     position: fixed;
+    z-index: 5;
+    top: 0;
     width: 170px;
     height: 100%;
-    left: -170px;
-    background: rgba(15, 17, 19, 0.9);
+    right: -170px;
+    background: rgb(15, 17, 19);
+    transition: all 0.5s ease-out;
+
+    
   }
-  #sidebar .active {
-    z-index: 4;
-    left: 0;
+  #sidebar.active{
+    justify-items: center;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  #sidebar .arrowEntrar{
+      color: #fff;
+      font-size: 40px;
+      cursor: pointer;
   }
   .main {
     display: grid;
-    grid-template-rows: 50vh 1fr 1fr;
+    grid-template-rows: 50vh 1fr 50vh;
     justify-items: center;
     align-items: center;
   }
@@ -81,11 +93,13 @@
   .main img {
     width: 42vh;
     height: 40vh;
+    margin-left: 20px;
     border-radius: 50%;
     box-shadow: 5px 5px 5px 5px #151719;
   }
   .main .logoP {
     border: 8px solid #762626;
+    margin-left: 0;
   }
 
   .div-img {
@@ -93,7 +107,13 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
   }
-
+  .div-img .Tf{
+      color: #fff;
+      margin: 20px 20px;
+      font-size: 30px;
+      border-bottom:3px solid #FFD700;
+  }
+ 
   .footer {
     display: grid;
     grid-template-columns: 1fr;
