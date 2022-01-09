@@ -55,12 +55,39 @@
   .aside {
     grid-area: aside;
   }
+  .logo-redes .fa-facebook {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes .fa-instagram {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes .fa-whatsapp {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes {
+    margin: 10px 10px;
+  }
 
   #sidebar {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 10px;
     z-index: 5;
     top: 0;
@@ -93,7 +120,7 @@
   }
   .main {
     display: grid;
-    grid-template-rows: 50vh 1fr 50vh;
+    grid-template-rows: 100vh 1fr 50vh;
     justify-items: center;
     align-items: center;
   }
@@ -125,7 +152,7 @@
     font-size: 30px;
     border-bottom: 3px solid #ffd700;
   }
-  .map{
+  .map {
     display: flex;
     position: relative;
     bottom: 50vh;
@@ -256,12 +283,40 @@
   .aside {
     grid-area: aside;
   }
+  .logo-redes .fa-facebook {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes .fa-instagram {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes .fa-whatsapp {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes {
+    margin: 10px 10px;
+  }
+
 
   #sidebar {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 10px;
     z-index: 5;
     top: 0;
@@ -286,6 +341,7 @@
   }
   #sidebar #sideli {
     color: #fff;
+    cursor: pointer;
     font-size: 18px;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -294,7 +350,7 @@
   }
   .main {
     display: grid;
-    grid-template-rows: 50vh 1fr 50vh;
+    grid-template-rows: 100vh 1fr 50vh;
     justify-items: center;
     align-items: center;
   }
@@ -326,21 +382,44 @@
     font-size: 30px;
     border-bottom: 3px solid #ffd700;
   }
-  .map{
-    display: flex;
+  .map {
     position: relative;
+    grid-row: 2/3;
     bottom: 50vh;
+    width: 90%;
+    height: 70%;
+    padding-top: 80vh;
   }
-  .Cont-map .ttMap{
+  .Cont-map .ttMap {
     display: flex;
     position: relative;
     color: #fff;
     font-size: 30px;
     margin-bottom: 20px;
-    bottom: 20vh;
+    grid-row: 1/2;
     border-bottom: 2px solid #ffd700;
   }
-  .Cont-map{
+  .Cont-map {
+    display: grid;
+    grid-template-rows: 20vh 1fr 30vh;
+    margin-bottom: 10px;
+    height: 180vh;
+    align-items: center;
+    justify-items: center;
+
+    position: relative;
+    bottom: 90vh;
+  }
+  .Cont-map .Follow {
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    position: relative;
+    grid-row: 3/4;
+    text-align: center;
+    font-family: "Press Start 2P";
+    font-size: 25px;
+    opacity: 0.5;
   }
 
   .footer {
@@ -418,7 +497,6 @@
   }
 }
 
-
 @media screen and (max-width: 767px) {
   body {
     width: 100%;
@@ -469,12 +547,45 @@
   .aside {
     grid-area: aside;
   }
+  .logo-redes .fa-facebook {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+
+  }
+  .logo-redes a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .logo-redes .fa-instagram {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes .fa-whatsapp {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    padding: 10px;
+  }
+  .logo-redes {
+    margin: 10px 10px;
+  }
 
   #sidebar {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 10px;
     z-index: 5;
     top: 0;
@@ -507,7 +618,7 @@
   }
   .main {
     display: grid;
-    grid-template-rows: 50vh 1fr 50vh;
+    grid-template-rows: 80vh 1fr 50vh;
     justify-items: center;
     align-items: center;
   }
@@ -540,11 +651,19 @@
     background: #df9a06;
     border-bottom: 3px solid #ffd700;
   }
-  .map{
-    display: flex;
+  .map {
     position: relative;
-    bottom: 20vh;
+    /* bottom: 20vh; */
     width: 90%;
+    height: 40vh;
+    bottom: 40vh;
+  }
+  .Cont-map {
+    position: relative;
+    grid-template-rows: 40px 60vh 20vh;
+    height: 90vh;
+    bottom: 30vh;
+    padding: 20px;
   }
 
   .footer {
