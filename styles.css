@@ -642,11 +642,11 @@
   .div-img {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    gap: 30px;
+    /* gap: 30px; */
   }
   .div-img .Tf {
     color: #f00;
-    margin: 20px 20px;
+    margin: 10px 20px;
     font-size: 30px;
     background: #df9a06;
     border-bottom: 3px solid #ffd700;
