@@ -63,6 +63,10 @@
     margin: 5px;
     padding: 10px;
   }
+  .logo-redes a{
+    color: #fff;
+    text-decoration: none;
+  }
   .logo-redes .fa-instagram {
     width: 30px;
     display: inline-block;
@@ -91,9 +95,9 @@
     gap: 10px;
     z-index: 5;
     top: 0;
-    width: 200px;
+    width: 270px;
     height: 100%;
-    right: -200px;
+    right: -270px;
     background: rgb(15, 17, 19);
     transition: all 0.5s ease-in-out;
   }
@@ -146,94 +150,133 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
   }
-  .div-img .Tf {
-    color: #fff;
-    margin: 20px 20px;
-    font-size: 30px;
-    border-bottom: 3px solid #ffd700;
+  .Cont-map {
+    position: relative;
+    /* grid-template-columns: 40px 60vh 20vh; */
+    height: 90vh;
+    width: 90%;
+    text-align: center;
+    justify-self: center;
+    bottom: 30vh;
+    padding: 20px;
   }
-  .map {
+  .Cont-map .ttMap{
     display: flex;
     position: relative;
-    bottom: 50vh;
-  }
-
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    margin: 0 auto;
-    background-image: url("img/fondo1.jpg");
-    justify-items: center;
-    gap: 5px;
-    height: 80vh;
     color: #fff;
-    z-index: 2;
+    font-size: 30px;
+    margin-bottom: 20px;
+    grid-row: 1/2;
+    border-bottom: 2px solid #ffd700;
   }
-  .footer .fa-facebook {
-    width: 30px;
-    display: inline-block;
-
-    height: 30px;
-    margin: 5px;
-    padding: 10px;
-  }
-
-  .footer .fa-instagram {
-    display: inline-block;
-
-    width: 30px;
-    height: 30px;
-    margin: 5px 5px;
-    padding: 10px;
-  }
-  /* .footer a{
-    display: none;
-  } */
-  .footer .fa-whatsapp {
-    display: inline-block;
-
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    padding: 10px;
-  }
-  .footer .copi {
+  .Cont-map .Follow{
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    position: relative;
+    grid-row: 3/4;
     text-align: center;
-    justify-content: center;
-    color: #fff;
-    padding: 10px 10px;
+    font-family: "Press Start 2P";
+    font-size: 25px;
+    opacity: 0.5;
+}
+.div-img .Tf {
+  color: #fff;
+  margin: 20px 20px;
+  font-size: 30px;
+  border-bottom: 3px solid #ffd700;
+}
+.map {
+  display: flex;
+  position: relative;
+  /* bottom: 50vh; */
+  width: 80%;
+  height: 70%;
+  margin: 10px 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  margin: 0 auto;
+  background-image: url("img/fondo1.jpg");
+  justify-items: center;
+  gap: 5px;
+  height: 80vh;
+  color: #fff;
+  z-index: 2;
+}
+.footer .fa-facebook {
+  width: 30px;
+  display: inline-block;
+
+  height: 30px;
+  margin: 5px;
+  padding: 10px;
+}
+.footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .fa-instagram {
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+  padding: 10px;
+}
+/* .footer a{
+  display: none;
+} */
+.footer .fa-whatsapp {
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  padding: 10px;
+}
+.footer .copi {
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px 10px;
+}
+.footer .And {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #facb0b;
+  box-shadow: 10px 10px 10px 10px #000;
+}
+li {
+  list-style: none;
+}
+.footer ul {
+  margin: 0 auto;
+}
+@keyframes fondo {
+  0% {
+    background-position: 100% 0%;
   }
-  .footer .And {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #facb0b;
-    box-shadow: 10px 10px 10px 10px #000;
+  10% {
+    background-position: 20% 40%;
   }
-  li {
-    list-style: none;
+  50% {
+    background-position: 80% 50%;
   }
-  .footer ul {
-    margin: 0 auto;
-  }
-  @keyframes fondo {
-    0% {
-      background-position: 100% 0%;
-    }
-    10% {
-      background-position: 20% 40%;
-    }
-    50% {
-      background-position: 80% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-@media screen and (max-width: 1280px) {
+  }
+
+
+@media screen and (max-width: 1090px) {
   body {
     width: 100%;
     max-width: 100%;
@@ -249,9 +292,7 @@
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     background-image: url("img/fondo1.jpg");
-    /* background-image: url("img/fondo2.jpg"); */
-    /* background-image: url("img/imagen3.jpg"); */
-    /* background-image: url("img/fondo3.jpg"); */
+
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
@@ -401,25 +442,21 @@
   }
   .Cont-map {
     display: grid;
-    grid-template-rows: 20vh 1fr 30vh;
     margin-bottom: 10px;
-    height: 180vh;
     align-items: center;
     justify-items: center;
 
+
     position: relative;
-    bottom: 90vh;
   }
   .Cont-map .Follow {
     color: #fff;
-    margin-bottom: 5px;
-    margin-top: 10px;
     position: relative;
-    grid-row: 3/4;
     text-align: center;
     font-family: "Press Start 2P";
     font-size: 25px;
     opacity: 0.5;
+    bottom: 15vh;
   }
 
   .footer {
@@ -480,6 +517,10 @@
   }
   .footer ul {
     margin: 0 auto;
+  }
+  .footer a{
+    color: #fff;
+    text-decoration: none;
   }
   @keyframes fondo {
     0% {
@@ -655,17 +696,39 @@
     position: relative;
     /* bottom: 20vh; */
     width: 90%;
-    height: 40vh;
+    height: 70vh;
     bottom: 40vh;
   }
   .Cont-map {
     position: relative;
     grid-template-rows: 40px 60vh 20vh;
-    height: 90vh;
+    height: 100vh;
     bottom: 30vh;
     padding: 20px;
   }
+  
+  .Cont-map .Follow{
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    font-family: "Press Start 2P";
+    font-size: 25px;
+    opacity: 0.5;
+    bottom: -10vh;
+  } 
 
+  .Cont-map .ttMap{
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    grid-row: 1/2;
+    border-bottom: 2px solid #ffd700;
+    bottom: 15vh;
+  }
   .footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -681,7 +744,7 @@
   .footer .fa-facebook {
     width: 30px;
     display: inline-block;
-
+    color: #fff;
     height: 30px;
     margin: 5px;
     padding: 10px;
@@ -689,7 +752,7 @@
 
   .footer .fa-instagram {
     display: inline-block;
-
+    color: #fff;
     width: 30px;
     height: 30px;
     margin: 5px 5px;
@@ -700,11 +763,15 @@
   } */
   .footer .fa-whatsapp {
     display: inline-block;
-
+    color: #fff;
     width: 30px;
     height: 30px;
     margin: 5px;
     padding: 10px;
+  }
+  .footer a{
+    color: #fff;
+    text-decoration: none;
   }
   .footer .copi {
     text-align: center;
